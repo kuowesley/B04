@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_recommend"
+    tools:context=".recommend">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hint_recommend" />
+
+        <Button
+            android:id="@+id/btnSuggest"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/recommend_btn"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResidueCalories_recommend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+        app:layout_constraintVertical_bias="0.2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg__"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/r1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/type1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/amount1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/one_amount_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="70dp"
+                                android:textAllCaps="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/protein1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="23dp"
+                                android:background="@drawable/protein_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="55dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/sugar1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/sugar_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:paddingLeft="95dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/sodium1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/sodium_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="20dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/calories1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/calories_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/fat1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fat_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg__"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p2"
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/r2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/type2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/amount2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/one_amount_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="70dp"
+                                android:textAllCaps="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/protein2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="23dp"
+                                android:background="@drawable/protein_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="55dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/sugar2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/sugar_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:paddingLeft="95dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/sodium2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/sodium_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="20dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/fat2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fat_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/calories2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/calories_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg__"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p3"
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/r3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/type3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/amount3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/one_amount_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="70dp"
+                                android:textAllCaps="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/protein3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="23dp"
+                                android:background="@drawable/protein_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="55dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/sugar3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/sugar_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:paddingLeft="95dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/sodium3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/sodium_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="20dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/fat3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fat_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/calories3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/calories_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg__"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p4"
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/r4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/type4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/amount4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/one_amount_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="70dp"
+                                android:textAllCaps="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/protein4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="23dp"
+                                android:background="@drawable/protein_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="55dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/sugar4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/sugar_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:paddingLeft="95dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/sodium4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/sodium_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="20dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/fat4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fat_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/calories4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/calories_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg__"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p5"
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/r5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/type5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/amount5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/one_amount_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="70dp"
+                                android:textAllCaps="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/protein5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="23dp"
+                                android:background="@drawable/protein_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="55dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/sugar5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/sugar_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:paddingLeft="95dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/sodium5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/sodium_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="20dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/fat5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/fat_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/calories5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/calories_recommend"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center"
+                                android:paddingLeft="30dp"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnPage_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/person_btn" />
+
+        <Button
+            android:id="@+id/btnAdd_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/add_btn" />
+
+        <Button
+            android:id="@+id/btnDay_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/diary_page_btn" />
+
+        <Button
+            android:id="@+id/btnRecommend_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/recommend_page_btn" />
+
+        <Button
+            android:id="@+id/btnReport_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/report_btn" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResidueCalories_recommend"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/residuecalories_day"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:paddingTop="22dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

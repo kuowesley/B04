@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">project_B04</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="foodType_list">
+        <item>麵類</item>
+        <item>飯類</item>
+        <item>澱粉</item>
+        <item>蛋類</item>
+        <item>豆類</item>
+        <item>魚類</item>
+        <item>肉類</item>
+        <item>蔬菜</item>
+        <item>飲料</item>
+        <item>炸物</item>
+        <item>點心</item>
+        <item>湯類</item>
+    </string-array>
+</resources>
